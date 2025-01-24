@@ -1,0 +1,44 @@
+version: "0.0.2"
+
+metadata:
+  name: "climate-resilience-community-planner"
+  description: "AI-driven strategic planning for community climate adaptation"
+  author: "void"
+  tags: ["climate-change", "urban-planning", "sustainability"]
+  private: false
+
+inputs:
+  region_type:
+    type: string
+    description: "Geographic and infrastructural context"
+    required: true
+    example: "Coastal urban area"
+  population_density:
+    type: number
+    description: "Community population per square kilometer"
+    required: true
+    example: 3500
+  primary_climate_risk:
+    type: string
+    description: "Most significant climate threat"
+    required: true
+    example: "Sea level rise"
+
+model:
+  provider: "openai"
+  name: "gpt-40"
+
+prompt: |
+  Develop comprehensive climate resilience strategy for:
+  Region Type: {region_type}
+  Population Density: {population_density}
+  Primary Climate Risk: {primary_climate_risk}
+
+  Generate holistic adaptation blueprint:
+  1. Infrastructure vulnerability mapping
+  2. Risk mitigation strategies
+  3. Community adaptation frameworks
+  4. Economic sustainability planning
+  5. Ecological preservation techniques
+  6. Emergency response optimization
+  7. Long-term evolutionary planning

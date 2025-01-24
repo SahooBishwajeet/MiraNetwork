@@ -1,0 +1,44 @@
+version: "0.0.2"
+
+metadata:
+  name: "educational-personalization-engine"
+  description: "AI-powered adaptive learning system for personalized education"
+  author: "void"
+  tags: ["education", "machine-learning", "personalized-learning"]
+  private: false
+
+inputs:
+  learning_style:
+    type: string
+    description: "Primary learning preference"
+    required: true
+    example: "Visual, Kinesthetic"
+  academic_level:
+    type: string
+    description: "Current educational stage"
+    required: true
+    example: "High School"
+  subject_area:
+    type: string
+    description: "Focus academic subject"
+    required: true
+    example: "Mathematics"
+
+model:
+  provider: "anthropic"
+  name: "claude-3.5-sonnet"
+
+prompt: |
+  Design a hyper-personalized learning strategy for:
+  Learning Style: {learning_style}
+  Academic Level: {academic_level}
+  Subject Area: {subject_area}
+
+  Create a comprehensive learning optimization plan:
+  1. Tailored content delivery mechanism
+  2. Adaptive learning path
+  3. Skill gap identification
+  4. Motivation enhancement strategies
+  5. Neurological learning pattern analysis
+  6. Multi-modal content recommendations
+  7. Progress tracking and predictive interventions

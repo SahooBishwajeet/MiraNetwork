@@ -1,0 +1,54 @@
+version: "0.0.3"
+
+metadata:
+  name: "mental-health-assistant"
+  description: "AI-powered mental health support platform providing personalized guidance and resources"
+  author: "void"
+  tags: ["mental-health", "assistant", "wellness", "support"]
+  private: false
+
+inputs:
+  domain:
+    type: string
+    description: "Comprehensive mental health support platform addressing user well-being"
+    required: true
+    example: "Provide personalized mental health resources, mood tracking, and professional referrals"
+  constraints:
+    type: string
+    description: "Technical and ethical constraints for mental health technology"
+    required: true
+    example: "HIPAA compliance, data privacy, secure user authentication, multilingual support"
+  scale:
+    type: string
+    description: "Expected user engagement and system performance requirements"
+    required: true
+    example: "1000 concurrent users, 99.9% uptime, global accessibility"
+
+model:
+  provider: "anthropic"
+  name: "claude-3.5-sonnet"
+
+prompt: |
+  You are a compassionate and expert mental health technology consultant. Design a comprehensive REST API for a mental health support platform that prioritizes user privacy, accessibility, and personalized care.
+
+  Domain: {domain}
+  Constraints: {constraints}
+  Scale: {scale}
+
+  Provide a detailed API design focusing on:
+  1. User profile and privacy-protected data modeling
+  2. Mental health assessment endpoints
+  3. Resource recommendation mechanisms
+  4. Secure communication protocols
+  5. Crisis intervention and referral workflows
+  6. Multilingual and culturally sensitive support structures
+  7. Consent and data management features
+  8. Anonymized analytics for continuous improvement
+  9. Compliance with mental health data regulations
+  10. Scalable and empathetic interaction design
+
+  Critical Requirements:
+  - Absolute user data confidentiality
+  - Trauma-informed design principles
+  - Adaptive and inclusive user experience
+  - Robust security and ethical AI practices
