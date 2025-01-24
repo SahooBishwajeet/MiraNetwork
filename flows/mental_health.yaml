@@ -1,4 +1,4 @@
-version: "0.0.3"
+version: "0.0.5"
 
 metadata:
   name: "mental-health-assistant"
@@ -52,3 +52,18 @@ prompt: |
   - Trauma-informed design principles
   - Adaptive and inclusive user experience
   - Robust security and ethical AI practices
+
+readme: |
+  # Mental Health Support Platform
+
+  AI-powered system for personalized mental health guidance and support.
+
+  ⚠️ **Disclaimer**: This is not a substitute for professional mental health care. In emergencies, contact emergency services or crisis hotlines.
+
+  ## Usage
+  ```python
+  response = client.flow.execute("void/mental-health-support", {
+      "emotional_state": "anxious",
+      "severity": "moderate",
+      "previous_strategies": "meditation, breathing exercises"
+  })

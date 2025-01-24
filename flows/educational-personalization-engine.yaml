@@ -1,4 +1,4 @@
-version: "0.0.2"
+version: "0.0.5"
 
 metadata:
   name: "educational-personalization-engine"
@@ -42,3 +42,16 @@ prompt: |
   5. Neurological learning pattern analysis
   6. Multi-modal content recommendations
   7. Progress tracking and predictive interventions
+
+readme: |
+  # Educational Personalization Engine
+
+  This flow leverages Claude 3.5 Sonnet to create personalized learning strategies based on individual learning styles, academic levels, and subject areas.
+
+  ## Usage
+  ```python
+  result = client.flow.execute("void/educational-personalization-engine", {
+      "learning_style": "Visual, Kinesthetic",
+      "academic_level": "High School",
+      "subject_area": "Mathematics"
+  })

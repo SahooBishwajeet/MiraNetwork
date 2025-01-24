@@ -1,4 +1,4 @@
-version: "0.0.2"
+version: "0.0.5"
 
 metadata:
   name: "climate-resilience-community-planner"
@@ -25,8 +25,8 @@ inputs:
     example: "Sea level rise"
 
 model:
-  provider: "openai"
-  name: "gpt-40"
+  provider: "anthropic"
+  name: "claude-3.5-sonnet"
 
 prompt: |
   Develop comprehensive climate resilience strategy for:
@@ -42,3 +42,24 @@ prompt: |
   5. Ecological preservation techniques
   6. Emergency response optimization
   7. Long-term evolutionary planning
+
+readme: |
+  # Climate Resilience Community Tracker
+
+  AI system for analyzing and enhancing community climate adaptation strategies.
+
+  ## Features
+  - Climate vulnerability assessment
+  - Resource allocation optimization
+  - Community engagement tracking
+  - Adaptation strategy planning
+  - Progress monitoring
+
+  ## Usage
+  ```python
+  response = client.flow.execute("void/climate-resilience-tracker", {
+      "location": "coastal-urban",
+      "primary_risks": "flooding, heat-waves",
+      "community_resources": "medium",
+      "population": 250000
+  })
